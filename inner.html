@@ -5,21 +5,71 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-<header>
+<header class="header">
   <nav>
-    <a><img src="img/logo-sedona.svg" width="1200" height="70" alt="Логотип Седона"></a>
-    <ul>
-      <li><a href="#">Информация</a></li>
-      <li><a href="#">Фотои и видео</a></li>
-      <li><a href="#">Карта штата</a></li>
-      <li><a href="#">Гостиницы</a></li>
+    <div class="logo"><a><img src="img/logo-sedona.svg" width="1200" height="70" alt="Логотип Седона"></a></div>
+      <ul class="menu">
+      <li class="menu-list"><a href="#">Информация</a></li>
+      <li class="menu-list"><a href="#">Фотои и видео</a></li>
+      <li class="menu-list"><a href="#">Карта штата</a></li>
+      <li class="menu-list"><a href="#">Гостиницы</a></li>
      </ul>
 
   </nav>
 </header>
 <main>
-  <section>>
-    <!-- Здесь будет форма фильтра жилья -->
+  <section>
+    <div class="image-filter">
+      <img src="img/background.jpg" width="1200" height="217" alt="фон для фильтра">
+    </div>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="pool" id="filter-pool" checked>
+            <label for="filter-pool">Бассейн</label>  
+          </li>
+          <li>
+            <input type="checkbox" name="parking" id="filter-parking">
+            <label for="filter-parking">Парковка</label>  
+          </li>
+          <li>
+            <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+            <label for="filter-wi-fi">wi-fi</label>  
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="hotel" id="filter-hotel" checked>
+            <label for="filter-hotel">Гостиница</label>  
+          </li>
+          <li>
+            <input type="checkbox" name="apartments" id="filter-apartments" checked>
+            <label for="filter-apartments">Мотель</label>  
+          </li>
+          <li>
+            <input type="checkbox" name="wi-fi" id="filter-wi-fi" checked>
+            <label for="filter-wi-fi">Апартаменты/label>  
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend> Стоимость в сутки (р):</legend>
+        <p>
+          <label for="from">от</label>
+          <input id="from" class="min-price" type="text" value="0">
+        </p>
+        <p>
+         <label for="to">до</label>
+         <input id="to" class="max-price" type="text" value="3000">
+        </p>
+        <button class="show-btn" type="submit">Показать</button>
+      </fieldset>
+    </form>
   </section>
   <section>
     <span>Найдено: 3</span>
@@ -30,8 +80,8 @@
       <li><a href="#">По рейтингу</a></li>
     </ul>
     <ul>
-      <li><a href="#">Вверх</a></li>
-      <li><a href="#">Вниз</a></li>
+      <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
+      <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
     </ul>
   </section>
   <section>
@@ -66,13 +116,19 @@
 <ul>
   <li>
     <img src="img/star.svg" width="19" height="17" alt="4 звезды">
+    <img src="img/star.svg" width="19" height="17" alt="4 звезды">
+    <img src="img/star.svg" width="19" height="17" alt="4 звезды">
+    <img src="img/star.svg" width="19" height="17" alt="4 звезды">
     <span>Рейтинг 8,5</span>
   </li>
   <li>
     <img src="img/star.svg" width="19" height="17" alt="3 звезды">
+    <img src="img/star.svg" width="19" height="17" alt="3 звезды">
+    <img src="img/star.svg" width="19" height="17" alt="3 звезды">
     <span>Рейтинг 8,9</span>
   </li>
   <li>
+    <img src="img/star.svg" width="19" height="17" alt="2 звезды">
     <img src="img/star.svg" width="19" height="17" alt="2 звезды">
     <span>Рейтинг 9,2</span>
   </li>
