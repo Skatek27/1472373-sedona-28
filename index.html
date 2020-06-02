@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
 <header class="header">
-  <nav>
-    <div class="logo"><a><img src="img/logo-sedona.svg" width="1200" height="70" alt="Логотип Седона"></a></div>
-    <ul class="menu">
+  <nav class="main-navigation">
+    <div class="logo"><a><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона"></a></div>
+    <ul class="site-navigation">
       <li class="menu-list"><a href="#">Информация</a></li>
       <li class="menu-list"><a href="#">Фотои и видео</a></li>
       <li class="menu-list"><a href="#">Карта штата</a></li>
@@ -93,7 +97,7 @@
 <section class="interested">
   <h2>Заинтересовались?</h2>
   <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  <button type="button">Поиск гостиницы в Седоне</button>
+  <button type="button" class="button-search"><span>Поиск гостиницы в Седоне</span></button>
 </section>
 <section class="map">
   <div>
@@ -105,17 +109,17 @@
   <form action="https://echo.htmlacademy.ru" method="post">
 <p>
  <label for="date-check-in">Дата заезда:</label>
- <input type="text" id="date-check-in" placeholder="24 апреля 2014">
+ <input class="entry-field" type="text" id="date-check-in" placeholder="24 апреля 2014">
 </p>
 <p>
-  <label for="date-check-out">Дата заезда:</label>
-  <input type="text" id="date-check-out" placeholder="4 июля 2014">
+  <label for="date-check-out">Дата выезда:</label>
+  <input class="entry-field" type="text" id="date-check-out" placeholder="4 июля 2014">
 </p>
 <p>
 <label for="adults">Взрослые:</label>
 <div>
    <input type="button" value="-">
-   <input id="adults" type="text" placeholder="2">
+   <input class="entry-field" id="adults" type="text" placeholder="2">
    <input type="button" value="+">
  </div>
 </p>
@@ -123,24 +127,24 @@
   <label for="children">Дети:</label>
   <div>
      <input type="button" value="-">
-     <input id="children" type="text" placeholder="0">
+     <input class="entry-field" id="children" type="text" placeholder="0">
      <input type="button" value="+">
    </div>
   </p>
   <p>
-    <input type="submit" value="Найти">
+    <input class="btn-search-date" type="submit" value="Найти">
   </p>
   </form>
 </section>
 </main>
 <footer class="footer">
-  <section>
+  <section class="contacts">
 <a href="#">#visitsedona</a>
 <p>тел: +(495) 666-01-66</p>
 </section>
 <section class="social-list">
   <ul>
-    <li>
+    <li class="social-list">
       <a href="#"><img src="img/twitter.svg" width="17" height="17" alt="Твиттер" ></a>
     </li>
     <li>
@@ -151,10 +155,10 @@
     </li>
   </ul>
 </section>
-<section>
+<section class="creator">
   <p>
-    Website by
-    <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="лого htmlacademy"></a>
+    <span>Website by</span>
+    <a class="logo-creator" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="лого htmlacademy"></a>
   </p>
 </section>
 </footer>
