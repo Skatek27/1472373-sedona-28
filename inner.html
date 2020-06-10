@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -9,24 +9,23 @@
 
   </head>
   <body>
+    <div class="wrapper">
 <header class="header">
   <nav class="main-navigation">
-    <div class="logo"><a><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона"></a></div>
+    <a class="logo"><img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона"></a>
+  <div class="wrapper-nav">
     <ul class="site-navigation">
       <li class="menu-list"><a href="#">Информация</a></li>
-      <li class="menu-list"><a href="#">Фотои и видео</a></li>
+      <li class="menu-list"><a href="#">Фото и видео</a></li>
       <li class="menu-list"><a href="#">Карта штата</a></li>
       <li class="menu-list"><a href="#">Гостиницы</a></li>
      </ul>
-
+  </div>
   </nav>
 </header>
 <main>
   <section class="housing-filter">
-    <div class="image-filter">
-      <img src="img/background.jpg" width="1200" height="217" alt="фон для фильтра">
-    </div>
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form class="hotel-filter" action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <ul class="infrastructure-list">
@@ -75,10 +74,10 @@
       </fieldset>
     </form>
   </section>
-  <section>
+  <section class="price-type-rating">
     <span class="quantity">Найдено: 3</span>
     <span class="sorting">Сортировка:</span>
-    <ul class="sorting-list">
+    <ul class="price-rating-list">
       <li><a href="#">По цене</a></li>
       <li><a href="#">По типу</a></li>
       <li><a href="#">По рейтингу</a></li>
@@ -89,80 +88,88 @@
     </ul>
   </section>
   <section>
-  <ul class="housing-item">
-    <li>
+  <ul class="housing-list">
+    <li class="housing-item">
       <img src="img/Layer 21.jpg" width="135" height="90" alt="Гостиница">
+      <div class="hous-content">
       <h2 class="sorting-result">Amara resort & spa</h2>
+      <div class="hous-wrapper">
+      <div class="hous-info">
       <span>Гостиница</span>
       <a class="details" href="#">Подробнее</a>
+      </div>
+      <div class="hous-reserve">
       <span>от 4000р.</span>
       <a class="booking" href="#">Забронировать</a>
+      </div>
+      </div>
+      </div>
+      <span class="rating">Рейтинг 8,5</span>
     </li>
-    <li>
+    <li class="housing-item">
       <img src="img/Layer 89 copy.jpg" width="135" height="90" alt="Мотель">
+      <div class="hous-content">
       <h2 class="sorting-result">Desert Quail inn</h2>
+      <div class="hous-wrapper">
+      <div class="hous-info">
       <span>Мотель</span>
       <a class="details" href="#">Подробнее</a>
+      </div>
+      <div class="hous-reserve">
       <span>от 3000р.</span>
       <a class="booking" href="#">Забронировать</a>
+      </div>
+      </div>
+      </div>
+      <span class="rating">Рейтинг 8,9</span>
     </li>
-    <li>
+    <li class="housing-item">
       <img src="img/Rectangle.jpg" width="135" height="90" alt="Апартаменты">
+      <div class="hous-content">
       <h2 class="sorting-result">Villas at poco diablo</h2>
+      <div class="hous-wrapper">
+      <div class="hous-info">
       <span>Апартаменты</span>
       <a class="details" href="#">Подробнее</a>
+      </div>
+      <div class="hous-reserve">
       <span>от 2000р.</span>
       <a class="booking" href="#">Забронировать</a>
+      </div>
+      </div>
+      </div>
+      <span class="rating">Рейтинг 9,2</span>
     </li>
   </ul>
   </section>
-  <section>
-<ul>
-  <li>
-    <img src="img/star.svg" width="19" height="17" alt="4 звезды">
-    <img src="img/star.svg" width="19" height="17" alt="4 звезды">
-    <img src="img/star.svg" width="19" height="17" alt="4 звезды">
-    <img src="img/star.svg" width="19" height="17" alt="4 звезды">
-    <span class="rating">Рейтинг 8,5</span>
-  </li>
-  <li>
-    <img src="img/star.svg" width="19" height="17" alt="3 звезды">
-    <img src="img/star.svg" width="19" height="17" alt="3 звезды">
-    <img src="img/star.svg" width="19" height="17" alt="3 звезды">
-    <span class="rating">Рейтинг 8,9</span>
-  </li>
-  <li>
-    <img src="img/star.svg" width="19" height="17" alt="2 звезды">
-    <img src="img/star.svg" width="19" height="17" alt="2 звезды">
-    <span class="rating">Рейтинг 9,2</span>
-  </li>
-</ul>
-  </section>
 </main>
 <footer class="footer">
+  <div class="fcontainer">
   <section class="contacts">
 <a href="#">#visitsedona</a>
 <p>тел: +(495) 666-01-66</p>
 </section>
 <section class="social-list">
-  <ul>
-    <li class="social-list">
-      <a href="#"><img src="img/twitter.svg" width="17" height="17" alt="Твиттер" ></a>
+  <ul social-list-box>
+    <li class="social-list-item">
+      <a class="social" href="#"><img src="img/twitter.svg" width="17" height="17" alt="Твиттер" ></a>
     </li>
-    <li>
-      <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук" ></a>
+    <li class="social-list-item">
+      <a class="social" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук" ></a>
     </li>
-    <li>
-      <a href="#"><img src="img/youtube.svg" width="20" height="16" alt="ютюб" ></a>
+    <li class="social-list-item">
+      <a class="social" href="#"><img src="img/youtube.svg" width="20" height="16" alt="ютюб" ></a>
     </li>
   </ul>
 </section>
 <section class="creator">
-  <p>
+  <p class="copyright">
     <span>Website by</span>
     <a class="logo-creator" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="лого htmlacademy"></a>
   </p>
 </section>
+  </div>
 </footer>
+</div>
   </body>
 </html>
