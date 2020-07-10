@@ -365,6 +365,13 @@ body {
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
 }
+.entry-field::placeholder {
+    color: var(--basic-black);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+}
 
     .search-hotel-form {
         display: flex;
