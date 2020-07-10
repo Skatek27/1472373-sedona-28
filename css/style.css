@@ -343,12 +343,12 @@ body {
 /* Form-date-search */
 
 .form-date-search {
-    background-color: var(--basic-white);
     color: var(--basic-black);
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     z-index: 2;
+    position: absolute;
 }
 .entry-field {
     background-color: var(--basic-grey-light);
@@ -477,7 +477,6 @@ body {
         padding: 0;
         border: 0;    
         background-color: inherit;
-        cursor: pointer;
     }
     .calendar svg {
         fill: #a9a9a9;
@@ -518,7 +517,6 @@ body {
         background-color:var(--basic-grey-light);
         color:var(--basic-grey-dark2);
         border: none;
-        cursor: pointer;
     }
     .plus:hover::before,
     .plus:focus::before,
@@ -777,7 +775,6 @@ body {
 .filter-item label {
 	padding-left: 40px;
     color: var(--basic-white);
-	cursor: pointer;
 }
 .filter-item label:before {
 	content: "";
@@ -792,7 +789,7 @@ body {
 }
   .range-cost {
     position: relative;
-    height: 35px;
+    height: 33px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -811,13 +808,13 @@ body {
   .range-cost label {
     display: inline-block;
     color: var(--basic-white);
-    cursor: pointer;
   }
   .range-cost .min-price,
   .range-cost .max-price {
     width: 90px;
     padding-left: 64px;
     text-align: left;
+    margin-top: 5px;
   }
   .range-cost input {
     width: 50px;
@@ -849,25 +846,23 @@ body {
     background-color: var(--basic-grey-middle);
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 3px 1px #ABABAB;
-    cursor: pointer;
+    box-shadow: 0 2px 1px #ABABAB;
   }
   .range-toggle:hover {
-    border: 10px solid #ffffff;
+    border: 9px solid #ffffff;
   }
   .range-toggle-max {
-    left: 80%;
+    left: 79%;
   }
   .show-btn {
     display: block;
     margin-left: 83px;
-    padding: 6px 35px;
+    padding: 7px 34px;
     color: var(--basic-white);
     text-transform: uppercase;
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 2px;
-    cursor: pointer;
   }
   .show-btn:hover {
     color: var(--basic-black);
@@ -965,8 +960,8 @@ body {
 .housing-item img {
     width: 135px;
 	height: 90px;
-	margin-top: 30px;
-	margin-left: 73px;
+	margin-top: 29px;
+	margin-left: 72px;
 	margin-right: 29px;    
 }
 .housing-item h2 {
@@ -1025,7 +1020,7 @@ body {
     color: var(--basic-white);
     background-color: var(--basic-brown-light);
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 2px;
 	padding: 4px 17px;
 	padding-bottom: 3px;
 }
@@ -1045,7 +1040,7 @@ body {
     color: var(--basic-white);
     background-color: var(--basic-blue-light);
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 2px;
 	padding: 4px 17px;
     padding-bottom: 3px;
 }
@@ -1093,13 +1088,16 @@ body {
   }
   .rating-value {
     min-height: 24px;
-    width: 81px;
+    width: 110px;
     margin-left: 1px;
     margin-bottom: 30px;
-    padding-left: 16px;
-    padding-right: 13px;
+
+    
+    padding-top: 3px;
+    padding-left: 3px;
     text-align: center;
-    color:var (var(--basic-grey-dark))
+    color:var(--basic-grey-dark);
+    background-color: var(--basic-grey-light);
   }
    
     
