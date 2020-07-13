@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -18,7 +18,7 @@
       <li class="menu-list"><a href="#">Информация</a></li>
       <li class="menu-list"><a href="#">Фото и видео</a></li>
       <li class="menu-list"><a href="#">Карта штата</a></li>
-      <li class="menu-list"><a href="#">Гостиницы</a></li>
+      <li class="menu-list"><a href="inner.html">Гостиницы</a></li>
      </ul>
   </div>
   </nav>
@@ -26,7 +26,7 @@
 <main>
   <section class="welcome">
      <div class="img-welcome">
-       <img src="img/welcome.png" width="456.65" height="350.88" alt="Изображение города Седона">
+       <img src="img/intro-welcome.svg" width="456" height="350" alt="Изображение города Седона">
      <div class="img-mask"></div>
      </div>
 </section>
@@ -48,18 +48,18 @@
       </div>
     </li>
     <li class="advantages">
-      <div class="icon-house"><img src="img/icon-1-2.svg" width="75" height="72" alt="Жилье"></div>  
+      <div class="icon-house"></div>  
       <h2 class="house">Жилье</h2>
       <p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
     
     </li>
     <li class="advantages">
-      <div class="icon-food"><img src="img/icon-3.svg" width="75" height="70" alt="Еда"></div>
+      <div class="icon-food"></div>
       <h2 class="food">Еда</h2>
       <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
     </li>
     <li class="advantages">
-      <div class="icon-souv"><img src="img/icon-2.svg" width="64" height="77" alt="Сувениры"></div>
+      <div class="icon-souv"></div>
       <h2 class="souv">Сувениры</h2>
       <p>Не только китайского, но и местного<br> производства!</p>
     
@@ -93,41 +93,40 @@
   <h2>Заинтересовались?</h2>
   <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 </section>
-<div> <button type="button" class="button-search"><span>Поиск гостиницы в Седоне</span></button></div>
-<section class="form-date-search">
-  <div class="form-close form-show">
+<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
+<section class="form-date-search form-close form-show">
   <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
 <p class="search-item search-item-date">
  <label for="date-check-in">Дата заезда:</label>
  <input class="entry-field" type="text" id="date-check-in" name="checkin" placeholder="24 апреля 2017">
- <button class="calendar"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.25 2.02h-2.84V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38h-3.93V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H5.91V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H1.75A1.8 1.8 0 000 3.86v16.3A1.8 1.8 0 001.75 22h17.5A1.8 1.8 0 0021 20.16V3.86a1.8 1.8 0 00-1.75-1.83zm.44 18.14a.45.45 0 01-.44.46H1.75a.45.45 0 01-.44-.46V3.86a.45.45 0 01.44-.46h2.84v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h2.84c.24 0 .44.2.44.46v16.3z"/><path d="M4.6 8.22h2.62v2.07H4.59zm0 3.45h2.62v2.06H4.59zm0 3.44h2.62v2.07H4.59zm4.59 0h2.62v2.07H9.2zm0-3.44h2.62v2.06H9.2zm0-3.45h2.62v2.07H9.2zm4.6 6.9h2.62v2.06h-2.63zm0-3.45h2.62v2.06h-2.63zm0-3.45h2.62v2.07h-2.63z"/></svg></button>
+ <button aria-label="Календарь" type="button" class="calendar"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.25 2.02h-2.84V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38h-3.93V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H5.91V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H1.75A1.8 1.8 0 000 3.86v16.3A1.8 1.8 0 001.75 22h17.5A1.8 1.8 0 0021 20.16V3.86a1.8 1.8 0 00-1.75-1.83zm.44 18.14a.45.45 0 01-.44.46H1.75a.45.45 0 01-.44-.46V3.86a.45.45 0 01.44-.46h2.84v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h2.84c.24 0 .44.2.44.46v16.3z"/><path d="M4.6 8.22h2.62v2.07H4.59zm0 3.45h2.62v2.06H4.59zm0 3.44h2.62v2.07H4.59zm4.59 0h2.62v2.07H9.2zm0-3.44h2.62v2.06H9.2zm0-3.45h2.62v2.07H9.2zm4.6 6.9h2.62v2.06h-2.63zm0-3.45h2.62v2.06h-2.63zm0-3.45h2.62v2.07h-2.63z"/></svg></button>
 </p>
 <p class="search-item search-item-date">
   <label for="date-check-out">Дата выезда:</label>
   <input class="entry-field" type="text" id="date-check-out" name="checkout" placeholder="4 июля 2017">
-  <button class="calendar"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.25 2.02h-2.84V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38h-3.93V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H5.91V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H1.75A1.8 1.8 0 000 3.86v16.3A1.8 1.8 0 001.75 22h17.5A1.8 1.8 0 0021 20.16V3.86a1.8 1.8 0 00-1.75-1.83zm.44 18.14a.45.45 0 01-.44.46H1.75a.45.45 0 01-.44-.46V3.86a.45.45 0 01.44-.46h2.84v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h2.84c.24 0 .44.2.44.46v16.3z"/><path d="M4.6 8.22h2.62v2.07H4.59zm0 3.45h2.62v2.06H4.59zm0 3.44h2.62v2.07H4.59zm4.59 0h2.62v2.07H9.2zm0-3.44h2.62v2.06H9.2zm0-3.45h2.62v2.07H9.2zm4.6 6.9h2.62v2.06h-2.63zm0-3.45h2.62v2.06h-2.63zm0-3.45h2.62v2.07h-2.63z"/></svg></button>
+  <button aria-label="Календарь" type="button" class="calendar"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path d="M19.25 2.02h-2.84V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38h-3.93V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H5.91V.65c0-.38-.3-.7-.66-.7-.36 0-.66.32-.66.7v1.38H1.75A1.8 1.8 0 000 3.86v16.3A1.8 1.8 0 001.75 22h17.5A1.8 1.8 0 0021 20.16V3.86a1.8 1.8 0 00-1.75-1.83zm.44 18.14a.45.45 0 01-.44.46H1.75a.45.45 0 01-.44-.46V3.86a.45.45 0 01.44-.46h2.84v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h3.93v1.38c0 .38.3.69.66.69.36 0 .66-.3.66-.69V3.4h2.84c.24 0 .44.2.44.46v16.3z"/><path d="M4.6 8.22h2.62v2.07H4.59zm0 3.45h2.62v2.06H4.59zm0 3.44h2.62v2.07H4.59zm4.59 0h2.62v2.07H9.2zm0-3.44h2.62v2.06H9.2zm0-3.45h2.62v2.07H9.2zm4.6 6.9h2.62v2.06h-2.63zm0-3.45h2.62v2.06h-2.63zm0-3.45h2.62v2.07h-2.63z"/></svg></button>
 </p>
 <div class="search-wrapper">
 <p class="search-item search-item-quantity">
 <label for="adults">Взрослые:</label>
-<div class="search-w">
-  <button type="button" class="minus"></button>
-   <input class="entry-field" id="adults" name="adults" type="text" placeholder="2">
-   <button type="button" class="plus"></button>
- </div>
 </p>
+<div class="search-w">
+  <button aria-label="минус" type="button" class="minus"></button>
+   <input class="entry-field" id="adults" name="adults" type="text" placeholder="2">
+   <button aria-label="плюс" type="button" class="plus"></button>
+ </div>
+
 <p class="search-item search-item-quantity">
   <label for="children">Дети:</label>
+</p>
   <div class="search-w">
-    <button type="button" class="minus"></button>
+    <button aria-label="минус" type="button" class="minus"></button>
      <input class="entry-field" id="children" name="children" type="text" placeholder="0">
-     <button type="button" class="plus"></button>
+     <button aria-label="плюс" type="button" class="plus"></button>
    </div>
-  </p>
 </div>
     <input class="btn-search-date" type="submit" value="Найти">
   </form>
-  </div>
 </section>
 <section class="map">
     <!--Здесь будет карта-->
@@ -137,21 +136,19 @@
   <div class="fcontainer">
   <section class="contacts">
 <a href="#">#visitsedona</a>
-<p>тел: +7(495) 666-01-66</p>
+<p><a href="tel:+74956660166" aria-label="Номер телефона">Тел: +7(495) 666-01-66</a></p>
 </section>
-<section class="social-list">
-  <ul class="social-list-box">
+  <ul class="social-list social-list-box">
     <li class="social-list-item">
-      <a class=" twitter social"></a>
+      <a class=" twitter social" href="https://twitter.com" aria-label="Ссылка на сайт Твиттер" ></a>
     </li>
     <li class="social-list-item">
-      <a class="facebook social" href="#"></a>
+      <a class="facebook social" href="https://www.facebook.com" aria-label="Ссылка на сайт Фэйсбук" ></a>
     </li>
     <li class="social-list-item">
-      <a class="youtube social" href="#"></a>
+      <a class="youtube social" href="https://www.youtube.com" aria-label="Ссылка на сайт Ютюб" ></a>
     </li>
   </ul>
-</section>
 <section class="creator">
   <p class="copyright">
     <span>Website by</span>
@@ -163,6 +160,6 @@
   </div>
 </footer>
 </div>
-<script src="js/form.js"></script>
+<script src="js/min.js"></script>
   </body>
 </html>
